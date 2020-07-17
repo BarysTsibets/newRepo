@@ -13,6 +13,5 @@ class Employee():
     def change_increase(self, new_increase):
         self.increase = new_increase
 
-
     def give_raise(self):
         self.salary = self.salary + self.increase
