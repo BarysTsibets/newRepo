@@ -8,10 +8,18 @@ class Employee():
 
 
     def descr_employer(self):
-        print(f"{self.f_name} {self.l_name} with salary {self.salary}")
+        return f"{self.f_name} {self.l_name} with salary {self.salary}"
 
     def change_increase(self, new_increase):
         self.increase = new_increase
+        return self.increase
 
     def give_raise(self):
         self.salary = self.salary + self.increase
+        return f"New salary is {self.salary}"
+
+    def e_name(self):
+        return self.f_name
+
+
+
